@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Trinket</title>
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+	</head>
+	<body class="w-100 h-100 sans-serif bg-lightest-blue">
+		<section class="ph3 ph5-ns pb5 black-70 fl-l pt5 w-100">
+			<h1 class="f4 fw6 fl-ns lh-title measure mt0">Trinket</h1>
+			<p class="f5 f4-ns fw4 measure lh-copy">Heavier than expected</p>
+			<form name="color-select" action="/recolor" method="POST">
+				<input type="color" id="rgb-color" name="rgb-color" value="{{ current_color }}">
+				<button type="submit">Change Color</button>
+			</form>
+		</section>
+
+	</body>
+</html>
